@@ -1,0 +1,43 @@
+{
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "fatal_flaws",
+    "hidden_assumptions",
+    "simpler_alternative",
+    "points_of_agreement",
+    "verdict",
+    "verdict_reason"
+  ],
+  "properties": {
+    "fatal_flaws": {
+      "type": "array",
+      "description": "Things in the plan that will break or fail in practice. Empty array if none.",
+      "items": { "type": "string" }
+    },
+    "hidden_assumptions": {
+      "type": "array",
+      "description": "Silent dependencies or preconditions the plan relies on without stating them.",
+      "items": { "type": "string" }
+    },
+    "simpler_alternative": {
+      "type": ["string", "null"],
+      "description": "A materially different, simpler approach worth considering. Null if the plan's approach is already the simplest reasonable one."
+    },
+    "points_of_agreement": {
+      "type": "array",
+      "description": "1-3 strongest parts of the plan to keep unchanged. Be honest; empty array if nothing is strong.",
+      "items": { "type": "string" },
+      "maxItems": 3
+    },
+    "verdict": {
+      "type": "string",
+      "enum": ["SHIP", "REVISE", "RECONSIDER"],
+      "description": "SHIP = plan is sound, proceed. REVISE = proceed after addressing specific concerns. RECONSIDER = the approach itself is wrong, start over."
+    },
+    "verdict_reason": {
+      "type": "string",
+      "description": "One sentence justifying the verdict."
+    }
+  }
+}

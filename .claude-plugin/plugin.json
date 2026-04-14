@@ -1,0 +1,8 @@
+{
+  "name": "second-opinion",
+  "version": "0.1.0",
+  "description": "Adversarial second-opinion reviews of plans and brainstorms from a different model family (Codex/GPT-5, Gemini, Opencode, or self-review fallback). Auto-gates risky ExitPlanMode calls via a PreToolUse hook.",
+  "homepage": "https://github.com/pghqdev/second-opinion",
+  "repository": "https://github.com/pghqdev/second-opinion",
+  "license": "MIT"
+}

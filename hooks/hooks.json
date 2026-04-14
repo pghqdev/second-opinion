@@ -1,0 +1,13 @@
+{
+  "PreToolUse": [
+    {
+      "matcher": "ExitPlanMode",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "${CLAUDE_PLUGIN_ROOT}/skills/second-opinion/scripts/detect_triggers.sh"
+        }
+      ]
+    }
+  ]
+}
