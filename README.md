@@ -29,6 +29,15 @@ The manifest at `.claude-plugin/plugin.json` and hooks at `hooks/hooks.json` use
 </details>
 
 <details>
+<summary>Install via skills.sh</summary>
+
+```bash
+npx skills add pghqdev/second-opinion
+```
+
+</details>
+
+<details>
 <summary>Install options</summary>
 
 | Env var | Default | Purpose |
