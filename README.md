@@ -20,8 +20,8 @@ That's it. Restart your Claude Code session. The next time you exit plan mode on
 <summary>Install as a Claude Code plugin instead</summary>
 
 ```
-/plugin marketplace add pghqdev/pghq
-/plugin install second-opinion@pghq
+/plugin marketplace add pghqdev/claude-plugins
+/plugin install second-opinion@pghq-dev
 ```
 
 The manifest at `.claude-plugin/plugin.json` and hooks at `hooks/hooks.json` use `${CLAUDE_PLUGIN_ROOT}` — zero path setup.
